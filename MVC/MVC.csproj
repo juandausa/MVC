@@ -151,6 +151,7 @@
     <Compile Include="Windsor\ServiceInstaller.cs" />
     <Compile Include="Windsor\WebServiceInstaller.cs" />
     <Compile Include="Windsor\WindsorActionInvoker.cs" />
+    <Compile Include="Windsor\WindsorAPIControllerFactory.cs" />
     <Compile Include="Windsor\WindsorControllerFactory.cs" />
     <Compile Include="Windsor\WindsorDependencyResolver.cs" />
     <Compile Include="Windsor\WindsorDependencyScope.cs" />
@@ -188,7 +189,6 @@
     <Content Include="Scripts\esm\popper.js.map" />
     <Content Include="Scripts\esm\popper-utils.min.js.map" />
     <Content Include="Scripts\esm\popper-utils.js.map" />
-    <Content Include="castle.config" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

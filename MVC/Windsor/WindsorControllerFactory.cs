@@ -17,7 +17,7 @@ namespace MVC.Windsor
 
         public override void ReleaseController(IController controller)
         {
-            _Container.Release(controller);  // The important part: release the component
+            _Container.Release(controller);
         }
 
         protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)

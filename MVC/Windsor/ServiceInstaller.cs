@@ -14,8 +14,6 @@ namespace MVC.Windsor
             container.Register(Classes.FromThisAssembly().BasedOn<IController>().LifestyleTransient());
             container.Register(Classes.FromThisAssembly().BasedOn<IHttpController>().LifestyleTransient());
             container.Register(Classes.FromThisAssembly().BasedOn<FilterAttribute>().LifestyleTransient());
-            //container.Register(Component.For<IActionInvoker>().ImplementedBy<WindsorActionInvoker>().DependsOn(Dependency.OnValue("container", container)).LifestyleTransient());
-            container.Install(Castle.Windsor.Installer.Configuration.FromAppConfig());
         }
 
         public void InstallFromAssembly(IWindsorContainer container, IConfigurationStore store, Assembly assembly)
