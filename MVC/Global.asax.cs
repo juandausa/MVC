@@ -19,7 +19,7 @@ namespace MVC
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            Container = new WindsorContainer("castle.config");
+            Container = new WindsorContainer();
             Container.Install(FromAssembly.This());
             Container.Kernel.Resolver.AddSubResolver(new CollectionResolver(Container.Kernel, true));
             DependencyResolver.SetResolver(new WindsorDependencyResolver(Container));

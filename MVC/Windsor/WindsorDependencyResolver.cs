@@ -6,7 +6,7 @@ using System.Web.Http.Dependencies;
 
 namespace MVC.Windsor
 {
-    public class WindsorDependencyResolver : System.Web.Http.Dependencies.IDependencyResolver
+    public class WindsorDependencyResolver : System.Web.Mvc.IDependencyResolver
     {
         private readonly IWindsorContainer _container;
 
