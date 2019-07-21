@@ -8,7 +8,7 @@ namespace MVC.Windsor
 {
     public class WindsorDependencyResolver : System.Web.Mvc.IDependencyResolver
     {
-        private readonly IWindsorContainer _container;
+        private readonly IWindsorContainer container;
 
         public WindsorDependencyResolver(IWindsorContainer container)
         {
@@ -17,21 +17,21 @@ namespace MVC.Windsor
                 throw new ArgumentNullException("container");
             }
 
-            _container = container;
+            this.container = container;
         }
         public object GetService(Type t)
         {
-            return _container.Kernel.HasComponent(t) ? _container.Resolve(t) : null;
+            return container.Kernel.HasComponent(t) ? container.Resolve(t) : null;
         }
 
         public IEnumerable<object> GetServices(Type t)
         {
-            return _container.ResolveAll(t).Cast<object>().ToArray();
+            return container.ResolveAll(t).Cast<object>().ToArray();
         }
 
         public IDependencyScope BeginScope()
         {
-            return new WindsorDependencyScope(_container);
+            return new WindsorDependencyScope(container);
         }
 
         public void Dispose()
