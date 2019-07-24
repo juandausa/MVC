@@ -53,6 +53,15 @@
     <Reference Include="Castle.Windsor, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
       <HintPath>..\packages\Castle.Windsor.5.0.0\lib\net45\Castle.Windsor.dll</HintPath>
     </Reference>
+    <Reference Include="Common.Log, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9720bde59dbab768, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Log.1.0.0.0\lib\net45\Common.Log.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Log.log4net, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9720bde59dbab768, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Log.log4net.1.0.0.0\lib\net45\Common.Log.log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.TelemetryCorrelation, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.TelemetryCorrelation.1.0.5\lib\net45\Microsoft.AspNet.TelemetryCorrelation.dll</HintPath>
     </Reference>
@@ -239,7 +248,9 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
@@ -251,6 +262,10 @@
     <ProjectReference Include="..\..\Interfaces.Servicios\Interfaces.Servicios.csproj">
       <Project>{4ee1320f-8108-421d-9c8f-521225683c7a}</Project>
       <Name>Interfaces.Servicios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Log.Log4net\Log.Log4net.csproj">
+      <Project>{1454708c-80c2-44f8-a25b-82f45d868c02}</Project>
+      <Name>Log.Log4net</Name>
     </ProjectReference>
     <ProjectReference Include="..\Servicios\Servicios.csproj">
       <Project>{8e2d03b9-bf64-49a5-a52c-279db9fb63a9}</Project>
