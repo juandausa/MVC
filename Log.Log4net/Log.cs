@@ -58,142 +58,142 @@ namespace Log.Log4net
 
         public void Error(object message)
         {
-            throw new NotImplementedException();
+            LogImpl.Error(message);
         }
 
         public void Error(object message, Exception exception)
         {
-            throw new NotImplementedException();
+            LogImpl.Error(message, exception);
         }
 
         public void ErrorFormat(string format, object arg0, object arg1, object arg2)
         {
-            throw new NotImplementedException();
+            LogImpl.ErrorFormat(format, arg0, arg1, arg2);
         }
 
         public void ErrorFormat(IFormatProvider provider, string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.ErrorFormat(provider, format, args);
         }
 
         public void ErrorFormat(string format, object arg0, object arg1)
         {
-            throw new NotImplementedException();
+            LogImpl.ErrorFormat(format, arg0, arg1);
         }
 
         public void ErrorFormat(string format, object arg0)
         {
-            throw new NotImplementedException();
+            LogImpl.ErrorFormat(format, arg0);
         }
 
         public void ErrorFormat(string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.ErrorFormat(format, args);
         }
 
         public void Fatal(object message)
         {
-            throw new NotImplementedException();
+            LogImpl.Fatal(message);
         }
 
         public void Fatal(object message, Exception exception)
         {
-            throw new NotImplementedException();
+            LogImpl.Fatal(message, exception);
         }
 
         public void FatalFormat(string format, object arg0, object arg1, object arg2)
         {
-            throw new NotImplementedException();
+            LogImpl.FatalFormat(format, arg0, arg1, arg2);
         }
 
         public void FatalFormat(string format, object arg0)
         {
-            throw new NotImplementedException();
+            LogImpl.FatalFormat(format, arg0);
         }
 
         public void FatalFormat(string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.FatalFormat(format, args);
         }
 
         public void FatalFormat(IFormatProvider provider, string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.FatalFormat(provider, format, args);
         }
 
         public void FatalFormat(string format, object arg0, object arg1)
         {
-            throw new NotImplementedException();
+            LogImpl.FatalFormat(format, arg0, arg1);
         }
 
         public void Info(object message, Exception exception)
         {
-            throw new NotImplementedException();
+            LogImpl.Info(message, exception);
         }
 
         public void Info(object message)
         {
-            throw new NotImplementedException();
+            LogImpl.Info(message);
         }
 
         public void InfoFormat(string format, object arg0, object arg1, object arg2)
         {
-            throw new NotImplementedException();
+            LogImpl.InfoFormat(format, arg0, arg1, arg2);
         }
 
         public void InfoFormat(string format, object arg0, object arg1)
         {
-            throw new NotImplementedException();
+            LogImpl.InfoFormat(format, arg0, arg1);
         }
 
         public void InfoFormat(string format, object arg0)
         {
-            throw new NotImplementedException();
+            LogImpl.InfoFormat(format, arg0);
         }
 
         public void InfoFormat(string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.InfoFormat(format, args);
         }
 
         public void InfoFormat(IFormatProvider provider, string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.InfoFormat(provider, format, args);
         }
 
         public void Warn(object message)
         {
-            throw new NotImplementedException();
+            LogImpl.Warn(message);
         }
 
         public void Warn(object message, Exception exception)
         {
-            throw new NotImplementedException();
+            LogImpl.Warn(message, exception);
         }
 
         public void WarnFormat(string format, object arg0, object arg1)
         {
-            throw new NotImplementedException();
+            LogImpl.WarnFormat(format, arg0, arg1);
         }
 
         public void WarnFormat(string format, object arg0)
         {
-            throw new NotImplementedException();
+            LogImpl.WarnFormat(format, arg0);
         }
 
         public void WarnFormat(string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.WarnFormat(format, args);
         }
 
         public void WarnFormat(IFormatProvider provider, string format, params object[] args)
         {
-            throw new NotImplementedException();
+            LogImpl.WarnFormat(provider, format, args);
         }
 
         public void WarnFormat(string format, object arg0, object arg1, object arg2)
         {
-            throw new NotImplementedException();
+            LogImpl.WarnFormat(format, arg0, arg1, arg2);
         }
     }
 }
