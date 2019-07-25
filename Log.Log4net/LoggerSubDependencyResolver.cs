@@ -1,7 +1,6 @@
 ﻿using Castle.Core;
 using Castle.MicroKernel;
 using Castle.MicroKernel.Context;
-using log4net;
 
 namespace Log.Log4net
 {
@@ -19,7 +18,7 @@ namespace Log.Log4net
             {
                 if (dependency.TargetType == typeof(ILog))
                 {
-                    return LogManager.GetLogger(model.Implementation);
+                    return new Log(log4net.LogManager.GetLogger(model.Implementation));
                 }
             }
 
