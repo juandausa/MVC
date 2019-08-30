@@ -1,6 +1,4 @@
-﻿using Interfaces.Servicios;
-
-namespace Servicios
+﻿namespace Servicios.Impl
 {
     public class GreetingService : IGreetingService
     {
