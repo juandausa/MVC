@@ -259,21 +259,21 @@
     <TypeScriptCompile Include="Scripts\index.d.ts" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Interfaces.Servicios\Servicios.csproj">
-      <Project>{4ee1320f-8108-421d-9c8f-521225683c7a}</Project>
-      <Name>Servicios</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Interfaces.Log\Log.csproj">
-      <Project>{189be528-f452-4f41-b1fc-ddfa5b3bfb89}</Project>
-      <Name>Log</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Log.Log4net\Log.Log4net.csproj">
       <Project>{1454708c-80c2-44f8-a25b-82f45d868c02}</Project>
       <Name>Log.Log4net</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Servicios\Servicios.Impl.csproj">
+    <ProjectReference Include="..\Log\Log.csproj">
+      <Project>{81268c89-58d3-4605-b8a4-454a8c48ceb9}</Project>
+      <Name>Log</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicios.Impl\Servicios.Impl.csproj">
       <Project>{8e2d03b9-bf64-49a5-a52c-279db9fb63a9}</Project>
       <Name>Servicios.Impl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicios\Servicios.csproj">
+      <Project>{4ee1320f-8108-421d-9c8f-521225683c7a}</Project>
+      <Name>Servicios</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
