@@ -1,2 +1,5 @@
 language: csharp
 solution: MVC.sln
+script:
+  - dotnet restore
+  - dotnet test Test.Base\Test.Base.csproj
